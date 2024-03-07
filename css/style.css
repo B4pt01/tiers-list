@@ -1,0 +1,16 @@
+.content {
+  margin: 20px;
+}
+
+#thirdPartyList {
+  list-style: none;
+}
+
+#thirdPartyList li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#thirdPartyList li:last-child {
+  border-bottom: none;
+}
