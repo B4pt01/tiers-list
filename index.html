@@ -21,11 +21,15 @@
 			<ul id="thirdPartyList"></ul>
 		</div>
 		<div>
-			<input type="text" id="recherches" />
-			<button onclick="validerForm()">search</button>
+			<label>Entrer le nom d'un plat</label>
+			<input type="text" id="recherches" onkeyup="validerForm()" placeholder="name" />
+			<!-- <button onclick="validerForm()">search</button> -->
 		</div>
 		<div id="img">
-			<!-- <img src="" alt="repas"> -->
+			<!-- <div draggable="true" ondragstart="drag(event)" id="${index}">
+				<img src="${meal.strMealThumb}" alt="repas" />
+				<p>${meal.strMeal}</p>
+			</div> -->
 		</div>
 		<section class="drop">
 			<div class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">délice</div>
