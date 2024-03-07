@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liste de tiers</title>
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="content">
-      <h1>Liste de tiers</h1>
-      <ul id="thirdPartyList"></ul>
-    </div>
-    <div>
-      <input type="text" id="recherches" />
-      <button onclick="validerForm()">search</button>
-    </div>
-    <div id="img">
-      <!-- <img src="" alt="repas"> -->
-    </div>
-    <script src="./script/script.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Liste de tiers</title>
+		<link rel="stylesheet" href="./css/nav.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#">Accueil</a></li>
+				<li><a href="#">À propos</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="content">
+			<h1>Liste de tiers</h1>
+			<ul id="thirdPartyList"></ul>
+		</div>
+		<div>
+			<input type="text" id="recherches" />
+			<button onclick="validerForm()">search</button>
+		</div>
+		<div id="img">
+			<!-- <img src="" alt="repas"> -->
+		</div>
+		<section class="drop">
+			<div class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">délice</div>
+			<div class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">super bon</div>
+			<div class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">incroyable</div>
+			<div class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">moyen</div>
+			<div class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">à chier</div>
+		</section>
+		<script src="./script/script.js"></script>
+		<script src="./script/drag.js"></script>
+	</body>
 </html>

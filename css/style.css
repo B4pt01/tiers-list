@@ -1,16 +1,26 @@
 .content {
-  margin: 20px;
+	margin: 20px;
 }
 
 #thirdPartyList {
-  list-style: none;
+	list-style: none;
 }
 
 #thirdPartyList li {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
 }
 
 #thirdPartyList li:last-child {
-  border-bottom: none;
+	border-bottom: none;
+}
+
+.drag-container {
+	min-height: 150px;
+	min-width: 150px;
+	border: solid 1px black;
+}
+
+img {
+	width: 200px;
 }
