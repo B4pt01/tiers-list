@@ -1,30 +1,86 @@
+/* Styles généraux */
+
 body {
+	font-family: Arial, sans-serif;
 	margin: 0;
+	padding: 0;
 }
 
-.content {
-	margin: 20px;
+h1 {
+	text-align: center;
+	margin-top: 20px;
 }
 
-#thirdPartyList {
-	list-style: none;
+label {
+	display: block;
+	margin-bottom: 5px;
 }
 
-#thirdPartyList li {
+input[type='text'] {
+	width: 100%;
 	padding: 10px;
-	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
 }
 
-#thirdPartyList li:last-child {
-	border-bottom: none;
+#img {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
+
+#img div {
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#img div:hover {
+	background-color: #f0f0f0;
+}
+
+#selection {
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: center;
+}
+
+/* Styles pour la section de glisser-déposer */
 
 .drag-container {
-	min-height: 150px;
-	min-width: 150px;
-	border: solid 1px black;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: start;
+	align-items: start;
+
+	height: 150px;
+	width: 100%;
+	background-color: grey;
+	border: solid 1px lightgrey;
+}
+.drag-container > .category {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+	width: 250px;
+}
+
+.drag-container h1 {
+	margin: 0;
+	font-size: 20px;
+	color: #333;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 img {
-	width: 200px;
+	width: 50px;
 }
